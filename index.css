@@ -1,0 +1,25 @@
+/*
+filename: Streaming Service Project
+author: James Nicholl
+created: 24/03/2022
+last modified: 24/03/2022
+description: topic.html css
+*/
+table, td, th{
+	border: 1px solid black;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
