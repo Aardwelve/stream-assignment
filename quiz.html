@@ -6,47 +6,44 @@
 	<meta name="keywords"		content="HTML, CSS"/>
 	<meta name="Author"		content="Stream"/>
 	<title>Streaming Quiz</title>
-<link href="quizcss.css" rel="stylesheet">
+
+<link href="quizcss.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">Topic</a>
-  <a href="#">Quiz</a>
-</div>
+	
 
 <div class="content">
   <h1>Quiz</h1>
 	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 	<!-- Text input for name and student code -->
 	<fieldset>
-		<legend> Student Details </legend>
+		<legend><h2>Student Details</h2></legend>
 	<p>
-		<label for="fname">Name and Surname:</label><br>
+		<label for="fname"><h3>Name and Surname:</h3></label><br>
 		<input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,25}" placeholder="e.g. John Doe" required = "required"><br>
 	</p>
 
 	<p>
-		<label for="StudentID" >Student Number: </label><br>
+		<label for="StudentID" ><h3>Student Number:</h3> </label><br>
 		<input type="text" name= "StudentID" id="StudentID" pattern = "[0-9]{7,10}"  placeholder="Enter Valid Student ID" required="required"/>
 	</p>
-		<p><label for="Date">Date </label> 
+		<p><label for="Date"><h3>Date</h3> </label> 
 			<input type="date" name= "Date" id="Date" size="10" required="required"/>
 		</p>
 	</fieldset>
 
 	<!--Text input for test-->
 	<fieldset>
-		<legend>Questions</legend>
+		<legend><h2>Questions</h2></legend>
 		
-	<p><label for="comments">question 1</label></p>
+	<p><label for="comments"><h3>question 1</h3></label></p>
 			<p>
 			<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
 		</p>
 
 	<!-- Radio button input -->
 	<p>
-		<label>Question 2</label><br>
+		<label><h3>Question 2</h3></label><br>
 		<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
 		<label for="q2">Answer1</label><br>	
 		<input type="radio" id=q3 name="radioq" value="Answer2" >
@@ -59,20 +56,20 @@
 
 	<!-- Checkbox input -->
 	<p>
-		<label>Question 3</label><br>
-		<input type="checkbox" id="check1" name="check[]" value="Answer1">
-		<label for="check1">Answer1</label><br>
-		<input type="checkbox" id="check2" name="check[]" value="Answer2" >
-		<label for="check2">Answer2</label><br>
-		<input type="checkbox" id="check3" name="check[]" value="Answer3">
-		<label for="check3">Answer3</label><br>
-		<input type="checkbox" id="check4" name="check[]" value="Answer4">
-		<label for="check4">Answer4</label><br>
+		</p><label><h3>Question 3</h3></label><br>
+		<input type="checkbox" id="check1" name="q[]" value="Answer1">
+		<label class="container" for="q6">Answer1</label><br>
+		<input type="checkbox" id="check2" name="q[]" value="Answer2">
+		<label for="q7">Answer2</label><br>
+		<input type="checkbox" id="check3" name="q[]" value="Answer3">
+		<label for="q8">Answer3</label><br>
+		<input type="checkbox" id="check4" name="q[]" value="Answer4">
+		<label for="q9">Answer4</label><br>	
 	</p>
 
 	<!-- Select input -->
 	<p>
-		<label for="question">Question 4</label><br>
+		<label for="question"><h3>Question 4</h3></label><br>
 		<select name="question" id="question" required="required">
 			<option value="">Please Select</option> 
 			<option value="an1">Answer 1 </option>
@@ -84,9 +81,11 @@
 
 	<!-- Range input -->
 	<p>
-		<label for="year">When did streaming first start? (between 2000 - 2015):<br></label>
-		<input type="range" value="24" min="2000" max="2015" oninput="this.nextElementSibling.value = this.value" name="year" id="year">
+		<div class=slidecontainer>
+		<label for="year"><h3>When did streaming first start? (between 2000 - 2015):</h3><br></label>
+		<input type="range" value="24" min="2000" max="2015" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
 		<output>2000</output><br>
+		</div>
 	</p>
 </fieldset>
 	<!-- Submit and Reset button -->
@@ -95,11 +94,9 @@
 		<input type="reset" value="Reset">
 	</p>
 	
+	
+	
 </form>
-</div>
-
-<div class="footer">
-  <p>Footer</p>
-</div>
+</div>	
 </body>
 </html>
