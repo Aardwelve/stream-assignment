@@ -6,60 +6,76 @@
 	<meta name="keywords"		content="HTML, CSS"/>
 	<meta name="Author"		content="Stream"/>
 	<title>Streaming Quiz</title>
+<link href="quizcss.css" rel="stylesheet">
 </head>
 <body>
+	<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Topic</a>
+  <a href="#">Quiz</a>
+</div>
 
-<h1>Quiz</h1>
-
-<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+<div class="content">
+  <h1>Quiz</h1>
+	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 	<!-- Text input for name and student code -->
+	<fieldset>
+		<legend> Student Details </legend>
 	<p>
 		<label for="fname">Name and Surname:</label><br>
-		<input type="text" id="fname" name="fname" required><br>
+		<input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,25}" placeholder="e.g. John Doe" required = "required"><br>
 	</p>
 
 	<p>
-		<label for="snum" >Student Number:  </label><br>
-		<input type="number"  min="1000000" max="9999999999" id="snum" name="snum" required><br>
+		<label for="StudentID" >Student Number: </label><br>
+		<input type="text" name= "StudentID" id="StudentID" pattern = "[0-9]{7,10}"  placeholder="Enter Valid Student ID" required="required"/>
 	</p>
+		<p><label for="Date">Date </label> 
+			<input type="date" name= "Date" id="Date" size="10" required="required"/>
+		</p>
+	</fieldset>
 
 	<!--Text input for test-->
-	<p>
-		<label for="q1">Question 1</label><br>
-		<input type="text" id="q1" name="qu1" required><br>
-	</p>
+	<fieldset>
+		<legend>Questions</legend>
+		
+	<p><label for="comments">question 1</label></p>
+			<p>
+			<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
+		</p>
 
 	<!-- Radio button input -->
 	<p>
 		<label>Question 2</label><br>
-		<input type="radio" id="q2" name="example1" value="Answer1" required>
+		<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
 		<label for="q2">Answer1</label><br>	
-		<input type="radio" id=q3 name="example2" value="Answer2" >
+		<input type="radio" id=q3 name="radioq" value="Answer2" >
 		<label for="q3">Answer2</label><br>
-		<input type="radio" id=q4 name="example3" value="Answer3">
+		<input type="radio" id=q4 name="radioq" value="Answer3">
 		<label for="q4">Answer3</label><br>
-		<input type="radio" id="q5" name="exampl4" value="Answer4">
+		<input type="radio" id="q5" name="radioq" value="Answer4">
 		<label for="q5">Answer4</label><br>
 	</p>
 
 	<!-- Checkbox input -->
 	<p>
 		<label>Question 3</label><br>
-		<input type="checkbox" id="q6" name="q[]" value="Answer1" required>
-		<label for="q6">Answer1</label><br>
-		<input type="checkbox" id="q7" name="q[]" value="Answer2" required>
-		<label for="q7">Answer2</label><br>
-		<input type="checkbox" id="q8" name="q[]" value="Answer3">
-		<label for="q8">Answer3</label><br>
-		<input type="checkbox" id="q9" name="q[]" value="Answer4">
-		<label for="q9">Answer4</label><br>
+		<input type="checkbox" id="check1" name="check[]" value="Answer1">
+		<label for="check1">Answer1</label><br>
+		<input type="checkbox" id="check2" name="check[]" value="Answer2" >
+		<label for="check2">Answer2</label><br>
+		<input type="checkbox" id="check3" name="check[]" value="Answer3">
+		<label for="check3">Answer3</label><br>
+		<input type="checkbox" id="check4" name="check[]" value="Answer4">
+		<label for="check4">Answer4</label><br>
 	</p>
 
 	<!-- Select input -->
 	<p>
 		<label for="question">Question 4</label><br>
-		<select name="question" id="question">
-			<option value="an1" selected >Answer 1 </option>
+		<select name="question" id="question" required="required">
+			<option value="">Please Select</option> 
+			<option value="an1">Answer 1 </option>
 			<option value="an2">Answer 2</option>
 			<option value="an3">Answer 3</option>
 			<option value="an4">Answer 4</option>
@@ -72,12 +88,18 @@
 		<input type="range" value="24" min="2000" max="2015" oninput="this.nextElementSibling.value = this.value" name="year" id="year">
 		<output>2000</output><br>
 	</p>
-
+</fieldset>
 	<!-- Submit and Reset button -->
 	<p>
 		<input type="submit" value="Submit">
 		<input type="reset" value="Reset">
 	</p>
+	
 </form>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
 </body>
 </html>
