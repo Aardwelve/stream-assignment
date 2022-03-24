@@ -4,10 +4,9 @@ body{
   color: white;
 }
 
-/* Background Graphic */
-body{
+/* Background Graphic for index.html*/
+#indexbody{
   background-image: url("../styles/images/background.png");
-  background-color: #858585;
   background-repeat: no-repeat;
 }
 
