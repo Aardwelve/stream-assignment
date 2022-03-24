@@ -1,7 +1,7 @@
-/* Title */
-
+/* Body text and background colour */
 body{
   color: white;
+  background-color:rgb(105, 105, 105);
 }
 
 /* Background Graphic for index.html*/
@@ -27,6 +27,7 @@ body{
     text-decoration: none;
   }
 
+/* Footer */
 footer{
   text-align:center;
   font-style: italic;
