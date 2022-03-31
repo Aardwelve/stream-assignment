@@ -153,7 +153,7 @@ input[type = date], select {
 	width: 35%;
 }
 .vl {
-  border-left: 3px solid black;
+  border-left: 3px solid white;
   height: 510px;
   position: absolute;
   left: 62%;
