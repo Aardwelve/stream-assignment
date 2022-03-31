@@ -6,7 +6,8 @@ last modified: 24/03/2022
 description: topic.html css
 */
 table, td, th{
-	border: 1px solid black;
+	border: 1px solid white;
+	float: middle;
 }
 .navbar {
     overflow: hidden;
@@ -23,3 +24,47 @@ table, td, th{
     padding: 14px 16px;
     text-decoration: none;
   }
+
+footer {
+	text-align: center;
+} 
+  
+#headerimage {display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 510px;
+  position: absolute;
+  left: 62%;
+  margin-left: -3px;
+  top: 100;
+}
+.midpageimage {
+	float: right;
+	width: 36%;
+	text-align: center;
+}
+aside {
+	clear:both;
+	float: right;
+	width: 35%;
+}
+figcaption {
+	clear: both;
+	float: right;
+}
+caption {
+	float: right;
+}
+#tblcomparison {
+	margin-left: auto;
+	margin-right: auto;
+}
+.paragraphs {
+	width: 60%;
+}
+	
+
