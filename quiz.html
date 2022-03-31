@@ -10,7 +10,7 @@
 <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
+<script src="script.js"></script>
 
 <div class="content">
   <h1>Quiz</h1>
@@ -42,54 +42,54 @@
 	<fieldset>
 		<legend><h2>Questions</h2></legend>
 		
-	<p><label for="comments"><h3>question 1</h3></label></p>
+	<p><label for="comments"><h3>In your opinion will streaming services overcome broadcast television?</h3></label></p>
 			<p>
 			<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
 		</p>
 
 	<!-- Radio button input -->
 	<p>
-		<label><h3>Question 2</h3></label><br>
+		<label><h3>In your opinion will streaming services overcome broadcast television?</h3></label><br>
 		<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
-		<label for="q2">Answer1</label><br>	
+		<label for="q2">IBM</label><br>	
 		<input type="radio" id=q3 name="radioq" value="Answer2" >
-		<label for="q3">Answer2</label><br>
+		<label for="q3">XEROX</label><br>
 		<input type="radio" id=q4 name="radioq" value="Answer3">
-		<label for="q4">Answer3</label><br>
+		<label for="q4">MICROSOFT</label><br>
 		<input type="radio" id="q5" name="radioq" value="Answer4">
-		<label for="q5">Answer4</label><br>
+		<label for="q5">STARWORKS</label><br>
 	</p>
 
 	<!-- Checkbox input -->
 	<p>
-		</p><label><h3>Question 3</h3></label><br>
+		</p><label><h3>What are the major benefits of streaming services?</h3></label><br>
 		<input type="checkbox" id="check1" name="q[]" value="Answer1">
-		<label class="container" for="q6">Answer1</label><br>
+		<label class="container" for="q6">Able to watch content whenever and where ever</label><br>
 		<input type="checkbox" id="check2" name="q[]" value="Answer2">
-		<label for="q7">Answer2</label><br>
+		<label for="q7">Better video quality</label><br>
 		<input type="checkbox" id="check3" name="q[]" value="Answer3">
-		<label for="q8">Answer3</label><br>
+		<label for="q8">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
 		<input type="checkbox" id="check4" name="q[]" value="Answer4">
-		<label for="q9">Answer4</label><br>	
+		<label for="q9">Wide variety for consumers</label><br>	
 	</p>
 
 	<!-- Select input -->
 	<p>
-		<label for="question"><h3>Question 4</h3></label><br>
+		<label for="question"><h3>Which one of these is not streaming service?</h3></label><br>
 		<select name="question" id="question" required="required">
 			<option value="">Please Select</option> 
-			<option value="an1">Answer 1 </option>
-			<option value="an2">Answer 2</option>
-			<option value="an3">Answer 3</option>
-			<option value="an4">Answer 4</option>
+			<option value="an1">Tubi</option>
+			<option value="an2">BTV</option>
+			<option value="an3">Fetch</option>
+			<option value="an4">Hayu</option>
 		</select><br>
 	</p>
 
 	<!-- Range input -->
 	<p>
 		<div class=slidecontainer>
-		<label for="year"><h3>When did streaming first start? (between 2000 - 2015):</h3><br></label>
-		<input type="range" value="24" min="2000" max="2015" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
+		<label for="year"><h3>When was the first successful live stream?</h3><br></label>
+		<input type="range" value="24" min="1980" max="2010" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
 		<output>2000</output><br>
 		</div>
 	</p>
