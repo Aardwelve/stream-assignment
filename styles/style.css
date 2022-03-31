@@ -139,6 +139,9 @@ input[type = date], select {
   cursor: pointer;
 }
 
+/*font*/
+*{font-family: Arial, sans-serif;}
+
 /*end of quiz.css*/
 
 
