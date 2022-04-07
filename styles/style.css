@@ -177,13 +177,18 @@ figcaption {
 caption {
 	float: right;
 }
-.tblcomparison {
-	border: 1px solid white;
+.tblcomparison {	
+	border: 3px solid white;
 	margin-left: auto;
 	margin-right: auto;
+	border-collapse: collapse;
 }
 .paragraphs {
 	width: 60%;
+}
+#bibliography p {
+	font-size: 13px;
+	line-height: 20%;
 }
 	
 /*end of topic.css*/
