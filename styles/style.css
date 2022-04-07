@@ -154,7 +154,7 @@ input[type = date], select {
 }
 .vl {
   border-left: 3px solid white;
-  height: 510px;
+  height: 523px;
   position: absolute;
   left: 62%;
   margin-left: -3px;
@@ -162,13 +162,16 @@ input[type = date], select {
 }
 .midpageimage {
 	float: right;
-	width: 36%;
+	width: 30%;
 	text-align: center;
 }
 aside {
 	clear:both;
 	float: right;
-	width: 35%;
+	width: 30%;
+	border: 2px solid white;
+	margin-left: 50px;
+	margin-right: 20px;
 }
 figcaption {
 	clear: both;
@@ -182,6 +185,12 @@ caption {
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
+}
+.tblcomparison th {
+	background-color: gray;
+}	
+.tblcomparison td {
+	background-color: #BCBBBB;
 }
 .paragraphs {
 	width: 60%;
