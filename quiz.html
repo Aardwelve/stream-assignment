@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script src="javascript.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="description"	content="Streaming Quiz"/>
 	<meta name="keywords"		content="HTML, CSS"/>
 	<meta name="Author"		content="Stream"/>
 	<title>Streaming Quiz</title>
 
-<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<script src="script.js"></script>
-
+<body onload="startTime()">
 <div class="content">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <h1>Quiz</h1>
+
   <div class="navbar">
 	<a href="index.html">Home</a>
 	<a href="topic.html">Topic page</a>
 	<a href="quiz.html">Quiz page</a>
 	<a href="enhancements.html">Enhancements page</a>
+	<div id="txt"></div>
 	</div>
 	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 	<!-- Text input for name and student code -->
@@ -99,9 +101,7 @@
 		<input type="submit" value="Submit">
 		<input type="reset" value="Reset">
 	</p>
-	
-	
-	
+
 </form>
 </div>	
 </body>
