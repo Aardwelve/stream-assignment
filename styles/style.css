@@ -199,7 +199,9 @@ caption {
 	font-size: 13px;
 	line-height: 20%;
 }
-	
+
+#topic {
+	position: relative;
 /*end of topic.css*/
 
 /* Back to top */
