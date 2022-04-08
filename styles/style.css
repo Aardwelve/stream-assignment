@@ -52,6 +52,10 @@ footer{
 }
 
 /*start of quiz.css*/
+.lable {
+  font-size: 21px;
+  font-weight: bolder;
+}
 .content {
   background-color: rgb(85, 85, 85);
   background-size: auto;
