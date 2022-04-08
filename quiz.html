@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<link href = "styles/style.css" rel="stylesheet">
 	<script src="javascript.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="description"	content="Streaming Quiz"/>
-	<meta name="keywords"		content="HTML, CSS"/>
-	<meta name="Author"		content="Stream"/>
+	<meta name="keywords"		content="HTML, CSS, JavaScript"/>
+	<meta name="Author"		content="Arvan, Alexander"/>
 	<title>Streaming Quiz</title>
 
 </head>
@@ -26,75 +26,73 @@
 	<!-- Text input for name and student code -->
 	<fieldset>
 		<legend><h2>Student Details</h2></legend>
-	<p>
-		<label for="fname"><h3>Name and Surname:</h3></label><br>
-		<input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,25}" placeholder="e.g. John Doe" required = "required"><br>
-	</p>
+	
+		<h3>Name and Surname:</h3>
+		<input type="text" id="fname" name="fname" pattern="[a-zA-Z'-'\s]*" placeholder="e.g. John Doe" required = "required"><br>
+	
 
-	<p>
-		<label for="StudentID" ><h3>Student Number:</h3> </label><br>
+	
+		<h3>Student Number:</h3>
 		<input type="text" name= "StudentID" id="StudentID" pattern = "[0-9]{7,10}"  placeholder="Enter Valid Student ID" required="required"/>
-	</p>
-		<p><label for="Date"><h3>Date</h3> </label> 
-			<input type="date" name= "Date" id="Date" size="10" required="required"/>
-		</p>
+	
+	
+		<h3>Date</h3>
+		<input type="date" name= "Date" id="Date" size="10" required="required"/>
+	
 	</fieldset>
 
 	<!--Text input for test-->
 	<fieldset>
-		<legend><h2>Questions</h2></legend>
-		
-	<p><label for="comments"><h3>In your opinion will streaming services overcome broadcast television?</h3></label></p>
-			<p>
-			<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
-		</p>
+	<legend><h2>Questions</h2></legend>
+	<h3>In your opinion will streaming services overcome broadcast television?</h3>
+	<p>
+		<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
+	</p>
 
 	<!-- Radio button input -->
-	<p>
-		<label><h3>In your opinion will streaming services overcome broadcast television?</h3></label><br>
-		<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
-		<label for="q2">IBM</label><br>	
-		<input type="radio" id=q3 name="radioq" value="Answer2" >
-		<label for="q3">XEROX</label><br>
-		<input type="radio" id=q4 name="radioq" value="Answer3">
-		<label for="q4">MICROSOFT</label><br>
-		<input type="radio" id="q5" name="radioq" value="Answer4">
-		<label for="q5">STARWORKS</label><br>
-	</p>
+	<h3>In your opinion will streaming services overcome broadcast television?</h3><br>
+	<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
+	<label for="q2">IBM</label><br>	
+	<input type="radio" id=q3 name="radioq" value="Answer2" >
+	<label for="q3">XEROX</label><br>
+	<input type="radio" id=q4 name="radioq" value="Answer3">
+	<label for="q4">MICROSOFT</label><br>
+	<input type="radio" id="q5" name="radioq" value="Answer4">
+	<label for="q5">STARWORKS</label><br>
+	
 
 	<!-- Checkbox input -->
-	<p>
-		</p><label><h3>What are the major benefits of streaming services?</h3></label><br>
-		<input type="checkbox" id="check1" name="q[]" value="Answer1">
-		<label class="container" for="q6">Able to watch content whenever and where ever</label><br>
-		<input type="checkbox" id="check2" name="q[]" value="Answer2">
-		<label for="q7">Better video quality</label><br>
-		<input type="checkbox" id="check3" name="q[]" value="Answer3">
-		<label for="q8">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
-		<input type="checkbox" id="check4" name="q[]" value="Answer4">
-		<label for="q9">Wide variety for consumers</label><br>	
-	</p>
+	
+	<h3>What are the major benefits of streaming services?</h3><br>
+	<input type="checkbox" id="check1" name="checkq[]" value="Answer1">
+	<label class="container" for="check1">Able to watch content whenever and where ever</label><br>
+	<input type="checkbox" id="check2" name="checkq[]" value="Answer2">
+	<label for="check2">Better video quality</label><br>
+	<input type="checkbox" id="check3" name="checkq[]" value="Answer3">
+	<label for="check3">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
+	<input type="checkbox" id="check4" name="checkq[]" value="Answer4">
+	<label for="check4">Wide variety for consumers</label><br>	
+	
 
 	<!-- Select input -->
-	<p>
-		<label for="question"><h3>Which one of these is not streaming service?</h3></label><br>
-		<select name="question" id="question" required="required">
-			<option value="">Please Select</option> 
-			<option value="an1">Tubi</option>
-			<option value="an2">BTV</option>
-			<option value="an3">Fetch</option>
-			<option value="an4">Hayu</option>
-		</select><br>
-	</p>
+
+	<h3>Which one of these is not streaming service?</h3><br>
+	<select name="drop_down" id="question" required="required">
+		<option value="">Please Select</option> 
+		<option value="Tubi">Tubi</option>
+		<option value="BTV">BTV</option>
+		<option value="Fetch">Fetch</option>
+		<option value="Hayu">Hayu</option>
+	</select><br>
 
 	<!-- Range input -->
-	<p>
+	
 		<div class=slidecontainer>
-		<label for="year"><h3>When was the first successful live stream?</h3><br></label>
+		<h3>When was the first successful live stream?</h3>
 		<input type="range" value="24" min="1980" max="2010" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
 		<output>2000</output><br>
 		</div>
-	</p>
+	
 </fieldset>
 	<!-- Submit and Reset button -->
 	<p>
@@ -104,9 +102,9 @@
 
 </form>
 </div>	
-</body>
 <footer>
 	<hr>
 	<p>Authors: <a href="mailto:102725583@student.swin.edu.au">Jesse Owen</a> | <a href="mailto:103952502@student.swin.edu.au">Arvan Talaska</a> | <a href="mailto:103995992@student.swin.edu.au">Alex Ozimkovsky-Klein</a> | <a href="mailto:103983670@student.swin.edu.au">James Nicholl</a> | <a href="mailto:103991385@student.swin.edu.au">Zach Chernishov</a></p>
 </footer>
+</body>
 </html>
