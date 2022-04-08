@@ -188,11 +188,11 @@ aside {
 	margin-left: 50px;
 	margin-right: 20px;
 }
-figcaption {
+#stdsrc {
 	clear: both;
 	float: right;
 }
-caption {
+caption{
 	float: right;
 }
 .tblcomparison {	
