@@ -29,7 +29,22 @@ body{
     padding: 14px 16px;
     text-decoration: none;
   }
+/* Video text */
 
+#vidtext{
+
+  text-align: center;
+
+  }
+
+ /* Video */
+ #video{
+  display: block;
+  margin: 0 auto;
+  width: 1245px;
+  height: 720px;
+  border: 0px;
+}
 /* Footer */
 footer{
   text-align:center;
