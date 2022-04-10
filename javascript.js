@@ -1,4 +1,4 @@
-/* Clock function */
+/* Clock function w3school*/
 
 function startTime() {
   const today = new Date();
@@ -16,8 +16,8 @@ function startTime() {
     return i;
 }
 
-/* Scroll down function */
-
+/* Scroll down function   */
+/* Back to top button - codepen. Back to top button. (n.d.). Retrieved April 4, 2022, from https://codepen.io/matthewcain/pen/ZepbeR */
 
 var mybutton = document.getElementById("myBtn");
 
