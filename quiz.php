@@ -11,13 +11,13 @@
 
 </head>
 <body>
-<?php
+<div class="content">
+  <?php
 	include('header.inc');
 ?>
 <?php
 	include('menu.inc');
 ?>
-	
 	<form action="markquiz.php" method="post" id="quiz">
 	<!-- Text input for name and student code -->
 	<fieldset>
