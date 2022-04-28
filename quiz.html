@@ -21,7 +21,8 @@
 	<a href="enhancements.html">Enhancements page</a>
 	<div id="txt"></div>
 	</div>
-	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+	
+	<form action="markquiz.php" method="post" id="quiz">
 	<!-- Text input for name and student code -->
 	<fieldset>
 		<legend><h2>Student Details</h2></legend>
@@ -44,7 +45,7 @@
 	<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
 
 	<!-- Radio button input -->
-	<p><label  class="lable">In your opinion will streaming services overcome broadcast television?</label><br></p>	
+	<p><label  class="lable">Which company helped develop streaming media?</label><br></p>	
 	<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
 	<label for="q2">IBM</label><br>	
 	<input type="radio" id=q3 name="radioq" value="Answer2" >
@@ -57,13 +58,13 @@
 
 	<!-- Checkbox input -->
 	<p><label class="lable">What are the major benefits of streaming services?</label><br></p>	
-	<input type="checkbox" id="check1" name="checkq[]" value="Answer1">
+	<input type="checkbox" id="check1" name="checkq" value="Answer1">
 	<label class="container" for="check1">Able to watch content whenever and where ever</label><br>
-	<input type="checkbox" id="check2" name="checkq[]" value="Answer2">
+	<input type="checkbox" id="check2" name="checkq" value="Answer2">
 	<label for="check2">Better video quality</label><br>
-	<input type="checkbox" id="check3" name="checkq[]" value="Answer3">
+	<input type="checkbox" id="check3" name="checkq" value="Answer3">
 	<label for="check3">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
-	<input type="checkbox" id="check4" name="checkq[]" value="Answer4">
+	<input type="checkbox" id="check4" name="checkq" value="Answer4">
 	<label for="check4">Wide variety for consumers</label><br>	
 
 	<!-- Select input -->
@@ -81,7 +82,7 @@
 	<div class=slidecontainer>
 	<p><label class="lable" for="year">When was the first successful live stream?</label></p>
 	<p><a href = "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider"><sup>Slider CSS</sup></a></p>
-	<input type="range" value="24" min="1980" max="2010" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
+	<input type="range" value="1993" min="1980" max="2010" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
 	<output>2000</output><br>
 	</div>
 	
