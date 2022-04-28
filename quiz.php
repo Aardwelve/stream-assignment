@@ -11,16 +11,12 @@
 
 </head>
 <body>
-<div class="content">
-  <h1>Quiz</h1>
-
-  <div class="navbar">
-	<a href="index.html">Home</a>
-	<a href="topic.html">Topic page</a>
-	<a href="quiz.html">Quiz page</a>
-	<a href="enhancements.html">Enhancements page</a>
-	<div id="txt"></div>
-	</div>
+<?php
+	include('header.inc');
+?>
+<?php
+	include('menu.inc');
+?>
 	
 	<form action="markquiz.php" method="post" id="quiz">
 	<!-- Text input for name and student code -->
@@ -95,9 +91,8 @@
 
 </form>
 </div>	
-<footer>
-	<hr>
-	<p>Authors: <a href="mailto:102725583@student.swin.edu.au">Jesse Owen</a> | <a href="mailto:103952502@student.swin.edu.au">Arvan Talaska</a> | <a href="mailto:103995992@student.swin.edu.au">Alex Ozimkovsky-Klein</a> | <a href="mailto:103983670@student.swin.edu.au">James Nicholl</a> | <a href="mailto:103991385@student.swin.edu.au">Zach Chernishov</a></p>
-</footer>
+<?php
+	require('footer.inc');
+?>
 </body>
 </html>
