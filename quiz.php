@@ -5,7 +5,7 @@
 	<script src="javascript.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="description"	content="Streaming Quiz"/>
-	<meta name="keywords"		content="HTML, CSS, JavaScript"/>
+	<meta name="keywords"		content="HTML, CSS, PHP"/>
 	<meta name="Author"		content="Arvan, Alexander"/>
 	<title>Streaming Media Quiz</title>
 
@@ -22,16 +22,16 @@
 	<!-- Text input for name and student code -->
 	<fieldset>
 		<legend><h2>Student Details</h2></legend>
-	
+
 		<p><label class="lable" for="fname">Name and Surname:</label></p><br>
-		<input type="text" id="fname" name="fname" pattern="[a-zA-Z'-'\s]*" placeholder="e.g. John Doe" required = "required"><br>
-		
+		<input type="text" id="fname" name="fname" placeholder="e.g. John Smith" required = "required"><br>
+
 		<p><label class="lable" for="StudentID">Student Number:</label></p><br>
-		<input type="text" name= "StudentID" id="StudentID" pattern = "[0-9]{7,10}"  placeholder="Enter Valid Student ID" required="required"/>
-	
+		<input type="text" name= "StudentID" id="StudentID" placeholder="Enter Valid Student ID" required="required"/>
+
 		<p><label class="lable" for="Date">Date</label></p>
 		<input type="date" name= "Date" id="Date" size="10" required="required"/>
-	
+
 	</fieldset>
 
 	<!--Text input for test-->
@@ -41,32 +41,35 @@
 	<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Answer here..."></textarea>
 
 	<!-- Radio button input -->
-	<p><label  class="lable">Which company helped develop streaming media?</label><br></p>	
-	<input type="radio" id="q2" name="radioq" value="Answer1" required = "required">
-	<label for="q2">IBM</label><br>	
-	<input type="radio" id=q3 name="radioq" value="Answer2" >
+	<p><label class="lable">Which company helped develop streaming media?</label><br></p>
+	<input type="radio" id="q2" name="radioq" value="q2" required = "required">
+	<label for="q2">IBM</label><br>
+	<input type="radio" id=q3 name="radioq" value="q3" >
 	<label for="q3">XEROX</label><br>
-	<input type="radio" id=q4 name="radioq" value="Answer3">
+	<input type="radio" id=q4 name="radioq" value="q4">
 	<label for="q4">MICROSOFT</label><br>
-	<input type="radio" id="q5" name="radioq" value="Answer4">
+	<input type="radio" id="q5" name="radioq" value="q5">
 	<label for="q5">STARWORKS</label><br>
 
-
 	<!-- Checkbox input -->
-	<p><label class="lable">What are the major benefits of streaming services?</label><br></p>	
-	<input type="checkbox" id="check1" name="checkq" value="Answer1">
+	<fieldset id="checkq">
+	<p><label class="lable">What are the major benefits of streaming services?</label><br></p>
+	<fieldset>
+	<input type="checkbox" id="check1" name="check1" value="Answer1">
 	<label class="container" for="check1">Able to watch content whenever and where ever</label><br>
-	<input type="checkbox" id="check2" name="checkq" value="Answer2">
+	<input type="checkbox" id="check2" name="check1" value="Answer2">
 	<label for="check2">Better video quality</label><br>
-	<input type="checkbox" id="check3" name="checkq" value="Answer3">
+	<input type="checkbox" id="check3" name="check1" value="Answer3">
 	<label for="check3">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
-	<input type="checkbox" id="check4" name="checkq" value="Answer4">
-	<label for="check4">Wide variety for consumers</label><br>	
+	<input type="checkbox" id="check4" name="check1" value="Answer4">
+	<label for="check4">Wide variety for consumers</label><br>
+	</fieldset>
+	</fieldset>
 
 	<!-- Select input -->
-	<p><label class="lable" for="question">Which one of these is not streaming service?</label><br></p>	
+	<p><label class="lable" for="question">Which one of these is not streaming service?</label><br></p>
 	<select name="drop_down" id="question" required="required">
-		<option value="">Please Select</option> 
+		<option value="">Please Select</option>
 		<option value="Tubi">Tubi</option>
 		<option value="BTV">BTV</option>
 		<option value="Fetch">Fetch</option>
@@ -81,7 +84,7 @@
 	<input type="range" value="1993" min="1980" max="2010" oninput="this.nextElementSibling.value = this.value" name="year" id="year" class="slider">
 	<output>2000</output><br>
 	</div>
-	
+
 </fieldset>
 	<!-- Submit and Reset button -->
 	<p>
@@ -90,7 +93,7 @@
 	</p>
 
 </form>
-</div>	
+</div>
 <?php
 	require('footer.inc');
 ?>
