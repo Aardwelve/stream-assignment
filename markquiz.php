@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--code by webdevtrick (webdevtrick.com) -->
 <html>
  
 <head>
@@ -12,100 +11,121 @@
  
 <body>
  
- <div id="page-wrap">
+
  
  <h1>Multiple Choice Results</h1>
- 
-        <?php
-            
-            $answer1 = $_POST['radioq'];
-            $answer2 = $_POST['checkq'];
-            $answer3 = $_POST['drop_down'];
-            $answer4 = $_POST['year'];
-            
-        
-            $totalCorrect = 0;
-            
-            if ($answer1 == "Answer4") { $totalCorrect++; }
-            if ($answer2 == "Answer1" && "Answer4") { $totalCorrect++; }
-            if ($answer3 == "BTV") { $totalCorrect++; }
-            if ($answer4 == "1993") { $totalCorrect++; }
-           
-            
-            echo "<div id='results'>$totalCorrect / 4 correct</div>";
-            
-        ?>
-					
-	<?php
-if (isset ($_POST["fname"])){
-	$fname = $_POST["fname"];
-	$fname = sanitise_input($fname);
-if (isset ($_POST["StudentID"]));
-	$StudentID = $_POST["StudentID"];
-	$StudentID = sanitise_input($StudentID);
-if (isset ($_POST["Date"]));
-	$Date = $_POST["Date"];
-	$Date = sanitise_input($Date);
-}
-else {
-	header ("location: register.html"); 
-}
-	
-	function sanitise_input($data) {
-		$data = trim($data);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-		return $data;
-	}
-	
-		$errMsg = " ";
-	if ($fname==" ") {
-		$errMsg .= "<p>You must enter an age.</p>";
-	}
-	else if (!preg_match("/^[a-zA-Z ][0,30]+$/D", $fname)) {
-		$errMsg .= "<p>Only 30 max Alpha letters and hyphens allowed in your last name.</p>";
-	}
-	if ($errMsg != " "){
-		echo "<p>$errMsg</p>";
-	}
-	else {
-		
-	
-	$errMsg = " ";
-	if ($StudentID==" ") {
-		$errMsg .= "<p>You must enter an age.</p>";
-	}
-	else if (!preg_match("/^[7,10]*$", $StudentID)) {
-		$errMsg .= "<p>only 7 or 10 digits allowed</p>";
-	}
-	if ($errMsg != " "){
-		echo "<p>$errMsg</p>";
-	}
-	else {
-			echo "<table width="200" border="1">
-  			<tbody>
-    		<tr>
-      		<th scope="Field">&nbsp;</th>
-      		<th scope="Format Requirement">&nbsp;</th>
-    		</tr>
-    		<tr>
-      		<td>Student ID</td>
-      		<td>$StudentID</td>
-    		</tr>
-    		<tr>
-      		<td>First & Last Name</td>
-      		<td>$fname</td>
-    		</tr>
-  			</tbody>
-			</table>";
 
-	}
-	}
-	
+<?php
+  function sanitise_input($data)  {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
 ?>
 
+
  
- </div>
+<?php
+            
+	$answer1 = $_POST['radioq'];
+    $answer2 = $_POST['check1'];
+    $answer3 = $_POST['drop_down'];
+    $answer4 = $_POST['year'];
+
+    $totalCorrect = 0;
+
+	if ($answer1 == "Answer4") { $totalCorrect++; }
+    if ($answer2 == "Answer1" && "Answer4") { $totalCorrect++; }
+    if ($answer3 == "BTV") { $totalCorrect++; }
+    if ($answer4 == "1993") { $totalCorrect++; }
+
+    #echo "<div id='results'>$totalCorrect / 4 correct</div>";
+            
+?>
+
+
+<?php
+	 if  (isset ($_POST["fname"]))  {
+        $fname = $_POST["fname"];
+    }
+
+    if  (isset ($_POST["StudentID"]))  {
+        $StudentID = $_POST["StudentID"];
+    }
+
+    if  (isset ($_POST["Date"]))  {
+        $Date = $_POST["Date"];
+    }
+
+    if  (isset ($_POST["comments"]))  {
+        $comments = $_POST["comments"];
+    }
+
+    if	(isset ($_POST["radioq"]))	{
+		$radioq	=$_POST["radioq"];
+	}
+
+	$checkq = "";
+    if (isset ($_POST["check1"]))   $checkq = $checkq. "Able to watch content whenever and where ever";
+    if (isset ($_POST["check2"]))   $checkq = $checkq. "Better video quality";
+    if (isset ($_POST["check3"]))   $checkq = $checkq. "TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes";
+    if (isset ($_POST["check4"]))   $checkq = $checkq. "Wide variety for consumers";
+
+    if  (isset ($_POST["year"]))	{
+          $year = $_POST["year"];
+	}
+
+    $fname = sanitise_input($fname);
+    $StudentID = sanitise_input($StudentID);
+    $Date = sanitise_input($Date);
+    $comments = sanitise_input($comments);
+    $radioq = sanitise_input($radioq);
+    $year = sanitise_input($year);
+
+  $errMsg = "";
+   if  ($fname=="")  {
+        $errMsg .= "You must enter your first/last name.<br />";
+  }
+  else if (!preg_match("/^[a-z ,.'-]+$/i",$fname)) {
+        $errMsg .= "Only alpha letters allowed in your first/last name.<br />";
+  }
+
+  if (is_numeric($StudentID) == false) {
+    $errMsg .= "Your Student ID must be a number.<br />";
+  }
+  else if ($StudentID < 0000000 or $StudentID > 9999999999) {
+    $errMsg .= "You must enter between 7-10 numbers.<br />";
+  }
+
+
+  if  ($errMsg !== ""){
+        echo  "<p>$errMsg</p>";
+  }
+
+
+
+
+    echo "<table border='1'>
+		<tr>
+			<th>Name and Surname</th>
+			<td>$fname</td>
+		</tr>
+		<tr>
+			<th>Student ID</th>
+			<td>$StudentID</td>
+		</tr>
+		<tr>
+			<th>Score</th>
+			<td>$totalCorrect/4</td>
+		<tr>
+			<th>Attempts</th>
+			<td></td>
+        </table>
+        </p>";
+
+?>
+
  
 </body>
  
