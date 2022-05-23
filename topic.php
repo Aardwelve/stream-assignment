@@ -17,7 +17,7 @@
 <?php
 	include('menu.inc');
 ?>
-<img src = "styles/images/imgTop.png" alt = "Picture of Various Streaming Services" id = "headerimage">
+<img src = "images/imgTop.png" alt = "Picture of Various Streaming Services" id = "headerimage">
 <hr>
 <section>
 <h2>What is a Streaming Media?</h2>
@@ -33,7 +33,7 @@
 <div>
 <table class = "midpageimage">
 <caption>Severe Tire Damange Stream - 1993</caption>
-<tr><td><img src = "styles/images/std.png" alt = "Picture of Severe Tire Damange Livestream" id = "imgmidpage"></td></tr>
+<tr><td><img src = "images/std.PNG" alt = "Picture of Severe Tire Damange Livestream" id = "imgmidpage"></td></tr>
 </table>
 <p id="stdsrc">Source: <a href = "https://www.std.org/text/live.html"> std.com </a></p>
 </div>

@@ -4,7 +4,7 @@ h1 {text-align: center}
 /* Body text and background colour */
 body{
   color: white;
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(72, 72, 72);
 }
 
 /* Background Graphic for index.html*/
@@ -253,4 +253,14 @@ caption{
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+/* Hyperlink colour correction */
+
+a {
+  color: rgb(29, 155, 240);
+}
+
+#vidtext {
+  text-shadow: 0 0 1px black;
 }
