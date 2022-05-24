@@ -264,3 +264,28 @@ a {
 #vidtext {
   text-shadow: 0 0 1px black;
 }
+
+
+/* manage page styling */
+.checkattemptscore {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+}
+
+#attempt1score {
+  height: 30px;
+  width: 50px;
+  margin-right: 1px;
+  padding: 0;
+  text-align: center;
+}
+
+#attempt2score {
+  height: 30px;
+  width: 50px;
+  margin-right: 1px;
+  padding: 0;
+  text-align: center;
+}

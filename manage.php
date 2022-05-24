@@ -18,10 +18,34 @@
                     <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID (Leave Student ID & Name empty to display all attempts)"><br>
                     <label for="studentname">Student Name: </label><br>
                     <input type="text" id="studentname" name="studentname" placeholder="Enter Student Name (Leave Student ID & Name empty to display all attempts)"><br>
-                    <label for="attempt1score">Attempt 1 Score: </label><br>
-                    <input type="text" id="attempt1score" name="attempt1score"><br>
-                    <label for="attempt2score">Attempt 2 Score: </label><br>
-                    <input type="text" id="attempt2score" name="attempt2score"><br>
+                    <br>
+                    <div class="checkattemptscore">
+                        <div>
+                            <label for="attempt1score">Check attempt 1 Score: </label><br>
+                            <input type="radio" id="a1-equal" name="a1radio" value="a1-equal" checked="true">
+                            <label for="a1-equal">Equal</label><br>
+                            <input type="radio" id="a1-less" name="a1radio" value="a1-less" >
+                            <label for="a1-less">Less than</label><br>
+                            <input type="radio" id="a1-greater" name="a1radio" value="a1-greater">
+                            <label for="a1-greater">Greater than</label><br>
+                        </div>
+                        <input type="text" id="attempt1score" name="attempt1score"><br>
+                        <p>%</p>
+                    </div>
+                    <br>
+                    <div class="checkattemptscore">
+                        <div>
+                            <label for="attempt2score">Check attempt 2 Score: </label><br>
+                            <input type="radio" id="a2-equal" name="a2radio" value="a2-equal" checked="true">
+                            <label for="a2-equal">Equal</label><br>
+                            <input type="radio" id="a2-less" name="a2radio" value="a2-less" >
+                            <label for="a2-less">Less than</label><br>
+                            <input type="radio" id="a2-greater" name="a2radio" value="a2-greater">
+                            <label for="a2-greater">Greater than</label><br>
+                        </div>
+                        <input type="text" id="attempt2score" name="attempt2score"><br>
+                        <p>%</p>
+                    </div>
                     <br>
                     <button>Search:</button>
                 </form>

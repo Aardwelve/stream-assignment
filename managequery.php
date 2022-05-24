@@ -23,6 +23,11 @@
                     $attempt1score = trim($_POST['attempt1score']);
                     $attempt2score = trim($_POST['attempt2score']);
                     $query = "select * from $sql_table";
+                    $a1radio = $_POST['a1radio'];
+                    $a2radio = $_POST['a2radio'];
+
+                    $attempt1score = $attempt1score / 100 * 4;
+                    $attempt2score = $attempt2score / 100 * 4;
 
                     if ($studentid != "") {
                         $query = "select * from $sql_table where Student_ID='$studentid%'";
@@ -34,10 +39,22 @@
 
                     if ($attempt1score != "") {
                         $query = "select * from $sql_table where No_Attempt=1 and Score='$attempt1score%'";
+                        if ($a1radio == 'a1-less') {
+                            $query = "select * from $sql_table where No_Attempt=1 and Score<'$attempt1score%'";
+                        }
+                        if ($a1radio == 'a1-greater') {
+                            $query = "select * from $sql_table where No_Attempt=1 and Score>'$attempt1score%'";
+                        }
                     }
 
                     if ($attempt2score != "") {
                         $query = "select * from $sql_table where No_Attempt=2 and Score='$attempt2score%'";
+                        if ($a2radio == 'a2-less') {
+                            $query = "select * from $sql_table where No_Attempt=2 and Score<'$attempt2score%'";
+                        }
+                        if ($a2radio == 'a2-greater') {
+                            $query = "select * from $sql_table where No_Attempt=2 and Score>'$attempt2score%'";
+                        }
                     }
 
 
