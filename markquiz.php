@@ -32,14 +32,16 @@
 					} else {
 						$answer1 = $_POST['radioq'];
 						$answer2 = $_POST['check1'];
-						$answer3 = $_POST['drop_down'];
-						$answer4 = $_POST['year'];
+						$answer3 = $_POST['check2'];
+						$answer4 = $_POST['drop_down'];
+						$answer5 = $_POST['year'];
 						$totalCorrect = 0;
 						
-						if ($answer1 == "Answer4") { $totalCorrect++; }
-						if ($answer2 == "Answer1" && "Answer4") { $totalCorrect++; }
-						if ($answer3 == "BTV") { $totalCorrect++; }
-						if ($answer4 == "1993") { $totalCorrect++; }
+						if ($answer1 == "q5") { $totalCorrect++; }
+						if ($answer2 == '1')  { $totalCorrect = $totalCorrect + 0.5; }
+						if ($answer3 == '4')  { $totalCorrect = $totalCorrect + 0.5; }
+						if ($answer4 == "BTV") { $totalCorrect++; }
+						if ($answer5 == "1993") { $totalCorrect++; }
 
 						$query = "INSERT INTO $sql_table (Attempt_ID, Date_Time, FirstName_LastName, Student_ID, No_Attempt, Score) VALUES (NULL, '$date', '$fname', '$studentid', '$attempts', '$totalCorrect')";
 
