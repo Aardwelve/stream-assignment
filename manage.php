@@ -1,3 +1,10 @@
+<?php 
+
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,11 +13,14 @@
 	<link href = "styles/style.css" rel="stylesheet">
 	</head>
 	<body>
+	     
 		<div id="page-wrap">
             <?php
                 include('header.inc');
                 include('menu.inc');
             ?>
+		<h2>Hello, <?php echo $_SESSION['user_name']; ?></h2>
+		 <a href="logout.php">Logout</a>
             <fieldset>
 		        <legend><h2>Search Attempts</h2></legend>
                 <form method="post" action="managequery.php">
@@ -65,3 +75,14 @@
         </div>
     </body>
 </html>
+<?php 
+
+}else{
+
+     header("Location: loginpage.php");
+
+     exit();
+
+}
+
+ ?>
