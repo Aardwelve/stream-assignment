@@ -1,9 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+<meta charset="UTF-8" />
+<title>Delete</title>
+<link href = "styles/style.css" rel="stylesheet">
 </head>
+<body>
+<div id="page-wrap">
 
 <body>
 	  <?php
@@ -59,6 +62,7 @@
 	
 	
 		?>
+</div>
 </body>
 </html>
 
