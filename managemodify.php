@@ -22,7 +22,7 @@
 					$sql_table="attempts";
 					$query = "DELETE FROM $sql_table WHERE Student_ID LIKE $Student_ID";
 					$result = mysqli_query($conn, $query);
-					if (!$result) {
+					if ($result) {
 					echo "<p> Student ID Has Successfully been Deleted </p>";
 					} else {
 						echo "<table border=\'1\'>\n";
