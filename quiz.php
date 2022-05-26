@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<link href = "styles/style.css" rel="stylesheet">
-	<script src="javascript.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="description"	content="Streaming Quiz"/>
 	<meta name="keywords"		content="HTML, CSS, PHP"/>
@@ -52,19 +51,16 @@
 	<label for="q5">STARWORKS</label><br>
 
 	<!-- Checkbox input -->
-	<fieldset id="checkq">
 	<p><label class="lable">What are the major benefits of streaming services?</label><br></p>
-	<fieldset>
-	<input type="checkbox" id="check1" name="check1" value="Answer1">
+	<input type="checkbox" id="check1" name="check1" value="1">
 	<label class="container" for="check1">Able to watch content whenever and where ever</label><br>
 	<input type="checkbox" id="check2" name="check1" value="Answer2">
 	<label for="check2">Better video quality</label><br>
 	<input type="checkbox" id="check3" name="check1" value="Answer3">
 	<label for="check3">TV Shows usually have complete seasons at launch, in comparison to free-to-air which in which the consumer has to wait for episodes</label><br>
-	<input type="checkbox" id="check4" name="check1" value="Answer4">
+	<input type="checkbox" id="check4" name="check2" value="4">
 	<label for="check4">Wide variety for consumers</label><br>
-	</fieldset>
-	</fieldset>
+	
 
 	<!-- Select input -->
 	<p><label class="lable" for="question">Which one of these is not streaming service?</label><br></p>
