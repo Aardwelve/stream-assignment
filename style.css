@@ -1,0 +1,303 @@
+/* Title */
+h1 {text-align: center}
+
+/* Body text and background colour */
+body{
+  color: white;
+  background-color: rgb(72, 72, 72);
+}
+
+/* Background Graphic for index.html*/
+#indexbody{
+  background-image: url("../styles/images/background.png");
+  background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+  
+  /* Links inside the navbar */
+  .navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+/* Video text */
+
+#vidtext{
+
+  text-align: center;
+
+  }
+
+ /* Video */
+ #video{
+  display: block;
+  margin: 0 auto;
+  width: 1244.44px;
+  height: 700px;
+  border: 0px;
+}
+/* Footer */
+footer{
+  text-align:center;
+  font-style: italic;
+}
+
+/*start of quiz.css*/
+/*CSS Buttons. (n.d.). Retrieved April 4, 2022, from https://www.w3schools.com/css/css3_buttons.asp*/
+/*CSS templates. (n.d.). Retrieved April 4, 2022, from https://www.w3schools.com/css/css_templates.asp*/
+.lable {
+  font-size: 21px;
+  font-weight: bolder;
+}
+.content {
+  background-color: rgb(72, 72, 72);
+  background-size: auto;
+  
+}
+
+input[type = submit]
+{width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+	cursor: pointer;}
+
+input[type = reset]
+{width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+	cursor: pointer;}
+
+input[type = submit]:hover {
+	background-color: #458049
+}
+
+input[type = reset]:hover {
+	background-color:rgba(155,0,2,0.96)
+}
+
+
+input[type =text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+	 width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 16px;
+}
+
+input[type = date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/*font*/
+*{font-family: Arial, sans-serif;}
+
+/*end of quiz.css*/
+
+
+/*topic.css*/
+ 
+#headerimage {display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+.vl {
+  border-left: 3px solid white;
+  height: 523px;
+  position: absolute;
+  left: 62%;
+  margin-left: -3px;
+}
+.midpageimage {
+	float: right;
+	width: 30%;
+	text-align: center;
+}
+aside {
+	clear:both;
+	float: right;
+	width: 30%;
+	border: 2px solid white;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+#stdsrc {
+	clear: both;
+	float: right;
+}
+caption{
+	float: right;
+}
+.tblcomparison {	
+	border: 3px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+.tblcomparison th {
+	background-color: gray;
+}	
+.tblcomparison td {
+	background-color: #BCBBBB;
+}
+.paragraphs {
+	width: 60%;
+}
+#bibliography p {
+	font-size: 13px;
+	line-height: 20%;
+}
+
+#topic {
+	position: relative;
+}
+/*end of topic.css*/
+
+/* Back to top */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(89, 0, 0);
+}
+
+
+/* Clock */
+#txt {
+  font-size: 16px;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Hyperlink colour correction */
+
+a {
+  color: rgb(29, 155, 240);
+}
+
+#vidtext {
+  text-shadow: 0 0 1px black;
+}
+
+
+/* manage page styling */
+.checkattemptscore {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+}
+
+#attempt1score {
+  height: 30px;
+  width: 50px;
+  margin-right: 1px;
+  padding: 0;
+  text-align: center;
+}
+
+#attempt2score {
+  height: 30px;
+  width: 50px;
+  margin-right: 1px;
+  padding: 0;
+  text-align: center;
+}
+
+/*loginpage php styling */
+
+input[type =password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

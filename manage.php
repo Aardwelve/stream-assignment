@@ -66,18 +66,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     <label for="studentid">Student ID: </label><br>
                     <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID"><br>
                     <div id="modify-btns">
-                        <button id="delete-btn">Delete</button>
-						
+                        <br>
+                        <button id="updatescore-btn">Update Score</button>
+                        <button id="deleteattempts-btn">Delete All Attempts</button>
+                    </div>
                 </form>
-				 <form method="post" action="manageupdate.php">
-					<br><label for="studentid">Student ID: </label><br>
-                    <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID"><br>
-					<input type='text' id='update' name='update' placeholder='Enter New Score'><br>
-					<input type='text' id='attempt' name='attempt' placeholder='Enter Attempt Number'><br>
-				<button id="updatescore-btn">Update Score</button>
-				</form>
             </fieldset>
         </div>
+		<?php
+	include('footer.inc');
+?>
     </body>
 </html>
 <?php 
