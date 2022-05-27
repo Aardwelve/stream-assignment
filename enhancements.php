@@ -16,7 +16,6 @@
 <?php
 	include('menu.inc');
 ?>
-<hr>
 <h2>Enhancement 1</h2>
 <h3>Embedded Video Content</h3>
 <p>The embedded video is used as a tutorial / guide of the website for other users to see the functionality of the page. For eg. <a href="index.html">index</a></p>

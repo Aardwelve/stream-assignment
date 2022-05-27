@@ -4,5 +4,6 @@
 		<a href="quiz.php">Quiz page</a>
 		<a href="loginpage.php">Manage Page</a>
 		<a href="enhancements.php">Enhancements page</a>
+		<a href="phpenhancement.php">PHP Enhancement page</a>
 	</div>
 	<hr>
