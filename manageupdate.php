@@ -16,8 +16,9 @@
                     $pwd,
                     $sql_db
                 );
+				$errMsg = "";
                 if (!$conn) {
-                    echo "<p>Database connection failure</p>";
+                    $errMsg .= "Database connection failure<br/>";
                 } else {
 						$sql_table="attempts";
 						$Student_ID = trim ($_POST["studentid"]);
@@ -29,9 +30,9 @@
 						$query = "UPDATE $sql_table SET Score= '$Score' WHERE Student_ID= '$Student_ID' AND No_Attempt= '$attemptno' ";
 						$result = mysqli_query($conn, $query);
 						if(!$result) {
-						echo "<p class=\"wrong\"> something is wrong with ", $query, "</p>";
+						$errMsg .= "Something is wrong with, $query<br/>";
 						}else {
-						echo "<p class=\"ok\"> Successfully changed the score to $Score</p>";
+							$errMsg .= "Successfully changed the score to $Score<br/>";
 						}
 						$query = "select Student_ID, No_Attempt, Score FROM $sql_table where Student_ID LIKE $Student_ID";
 						$result = mysqli_query($conn, $query);

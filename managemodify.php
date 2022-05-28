@@ -14,8 +14,9 @@
                     $pwd,
                     $sql_db
                 );
+				$errMsg = "";
                 if (!$conn) {
-                    echo "<p>Database connection failure</p>";
+                    $errMsg .= "Database connection failure<br/>";
                 } else {
                     $Student_ID = trim ($_POST["studentid"]);
 					htmlspecialchars($_POST["studentid"]);
@@ -23,7 +24,7 @@
 					$query = "DELETE FROM $sql_table WHERE Student_ID LIKE $Student_ID";
 					$result = mysqli_query($conn, $query);
 					if ($result) {
-					echo "<p> Student ID Has Successfully been Deleted </p>";
+					$errMsg .= "Student ID Has Successfully been Deleted <br/>";
 					} else {
 						echo "<table border=\'1\'>\n";
 						echo "<tr>\n"

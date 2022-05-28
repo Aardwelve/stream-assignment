@@ -14,8 +14,9 @@
                     $pwd,
                     $sql_db
                 );
+                $errMsg = "";
                 if (!$conn) {
-                    echo "<p>Database connection failure</p>";
+                    $errMsg .= "Database connection failure<br/>";
                 } else {
                     $sql_table = "attempts";
                     $studentid = trim($_POST['studentid']);
@@ -60,7 +61,7 @@
 
                     $result = mysqli_query($conn, $query);
                     if(!$result) {
-                        echo "<p>Something is wrong with ", $query, "</p>";
+                        $errMsg .= "Something is wrong with, $query<br/>";
                     } else {
                         echo "<table border=\"1\">\n";
                         echo "<tr>\n "
