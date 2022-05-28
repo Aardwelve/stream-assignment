@@ -87,8 +87,8 @@
 	if (is_numeric($studentid) == false) {
 	  $errMsg .= "Your Student ID must be a number<br />";
 	}
-	else if ($studentid < 1000000 or $studentid > 9999999999) {
-	  $errMsg .= "Your Student ID must be between 7 - 10 numbers<br />";
+	else if ($studentid > 999999 && $studentid < 10000000  or  $studentid > 999999999 && $studentid < 10000000000) {
+	  $errMsg .= "Your Student ID must be between 7 or 10 numbers<br />";
 	}
   
 	if  ($fname=="")  {

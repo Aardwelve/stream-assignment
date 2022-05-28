@@ -17,7 +17,7 @@
 <?php
 	include('menu.inc');
 ?>
-	<form action="markquiz.php" method="post" id="quiz">
+	<form action="markquiz.php" method="post" id="quiz" novalidate="novalidate">
 	<!-- Text input for name and student code -->
 	<fieldset>
 		<legend><h2>Student Details</h2></legend>
