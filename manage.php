@@ -61,7 +61,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </form>
             </fieldset>
             <fieldset>
-		        <legend><h2>Modify Attempts</h2></legend>
+            <legend><h2>Modify Attempts</h2></legend>
                 <form method="post" action="managemodify.php">
                     <label for="studentid">Student ID: </label><br>
                     <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID"><br>
