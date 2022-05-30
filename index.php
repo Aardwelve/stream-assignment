@@ -19,8 +19,8 @@
     include('menu.inc');
 ?>
 	
-	<a id="vidtext" href="https://www.youtube.com/watch?v=oBA_FdQZsYc"><h2>Streaming Media Video</h2></a>
-	<iframe id="video" src="https://www.youtube.com/embed/oBA_FdQZsYc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<a id="vidtext" href="https://video.alexanderok.com"><h2>Streaming Media Video</h2></a>
+	<iframe id="video" src="https://video.alexanderok.com" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 <hr>
 <?php
