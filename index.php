@@ -20,7 +20,7 @@
 ?>
 	
 	<a id="vidtext" href="https://www.youtube.com/watch?v=xVoV3qBw3gA"><h2>Streaming Media Video</h2></a>
-	<iframe id="video" src="https://www.youtube.com/embed/watch?v=xVoV3qBw3gA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe id="video" src="https://www.youtube.com/embed/xVoV3qBw3gA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 <hr>
 <?php
